@@ -217,7 +217,7 @@ a {
 
 /* Hero */
 .hero {
-    margin-top: 60px;
+    margin-top: calc(60px + 81px);
 }
 .hero__inner {
     display: flex;
@@ -1136,6 +1136,7 @@ a {
     background-color: #a75325;
     border-color: #a75325;
     color: #fcfcfc;
+    cursor: pointer;
 }
 .social-item:hover .social-img {
     color: #fcfcfc;
