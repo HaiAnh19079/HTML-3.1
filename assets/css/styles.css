@@ -31,6 +31,22 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Scrollbar CSS */
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 /* common */
 a {
     text-decoration: none;
@@ -135,17 +151,16 @@ a {
 }
 /* Header */
 .header {
-    margin-top: 16px;
-    padding: 12px 0;
+    padding-top: 28px;
+    padding-bottom: 12px;
 }
 
 .header.fixed {
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: -16px;
     width: 100%;
     z-index: 3;
-    background: rgb(249, 251, 249, 0.6);
-    margin-top: 0;
+    background: rgb(249, 251, 249, 0.7);
     transition: top 0.3s;
 }
 
